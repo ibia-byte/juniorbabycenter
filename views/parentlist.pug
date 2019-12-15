@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title PARENT REGISTRATION FORM 
+    div.row.justify-content-center
+        div.col-md-8
+            div.card-body.border   
+                header.card-header
+                    h4.card-title Register Parents
+                table.table
+                    thead.thead-dark
+                        tr 
+                            th Parent Name
+                            th Baby Name
+                            th Sex
+                            th Date Of Birth
+                            th Residence
+                            th Phone Number
+                            th Next of kin
+                            th Clubs
+                        tbody
+                            //- iteration method 
+                            each parent in parents
+                                tr
+                                    td #{parent.parentName}
+                                    td #{parent.babyName}
+                                    td #{parent.sex}
+                                    td #{parent.dateOfBirth}
+                                    td #{parent.residence}
+                                    td #{parent.phoneNumber}
+                                    td #{parent.nok}
+                                    td #{parent.clubs}

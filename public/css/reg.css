@@ -1,0 +1,19 @@
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 2em;
+
+}
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 100px;
+  height: 25px;
+  font-size: 20px;
+}
+inputs{
+  height: 25px;
+}

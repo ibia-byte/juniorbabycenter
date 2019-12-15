@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title EMPLOYEE REGISTRATION FORM 
+    div.row.justify-content-center
+        div.col-md-8
+            div.card-body.border   
+                header.card-header
+                    h4.card-title Registered employees
+                table.table
+                    thead.thead-dark
+                        tr 
+                            th username
+                            th firstname
+                            th lastname
+                            th sex
+                            th dateOfBirth
+                            th residence
+                            th phoneNumber
+                            th nok
+                            th club
+                        tbody
+                            //- iteration method 
+                            each employee in employees
+                                tr  
+                                    td #{employee.username}
+                                    td #{employee.firstName}
+                                    td #{employee.lastName}
+                                    td #{employee.sex}
+                                    td #{employee.dateOfBirth}
+                                    td #{employee.residence}
+                                    td #{employee.phoneNumber}
+                                    td #{employee.nok}
+                                    td #{employee.club}

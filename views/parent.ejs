@@ -1,0 +1,59 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/custom.css">
+    <script src="validation.js"></script>
+    <style>
+        .div {
+            display: inline-block;
+            padding: 2em;
+            width: 40%;
+            height: 50%;
+            margin-left: 450px;
+            margin-right: 450px;
+            margin-top: 0em;
+    
+        }
+    </style>
+
+
+</head>
+
+<body >
+    <h1>Parent Registration</h1>
+    <form method="POST">
+    <label>Parent Name :</label>
+    <input type="text" name="parentName" id="" placeholder="Enter parent name..."><br /><br />
+    <label>Baby Name :</label>
+    <input type="text" name="babyName" id="" placeholder="Enter baby name..."><br /><br />
+    <label>Sex :</label><br />
+    <input type="radio" name="sex" id="" value="Male">Male
+    <input type="radio" name="sex" id="" value="Female">Female<br /><br />
+    <label>Date of Birth :</label>
+    <input type="date" name="dateOfBirth" id=""><br /><br />
+    <label>Residence :</label>
+    <input type="text" name="residence" id="" placeholder="Place of Residence..."><br /><br />
+    <label>Phone Number :</label>
+    <input type="number" name="phoneNumber" id=""><br /><br />
+    <label>Next of kin :</label>
+    <input type="text" name="nok" id=""><br /><br />
+    <label>Clubs :</label>
+    <select name="club" id="">
+        <option value="Select Club" disabled selected>Select Club</option>
+        <option value="Morning">Morning</option>
+        <option value="Afternoon">Afternoon</option>
+        <option value="Evening">Evening</option>
+        <option value="Night">Night</option>
+    </select>
+    <br /><br />
+    <button type="submit">Register</button>
+    </form>
+
+
+                

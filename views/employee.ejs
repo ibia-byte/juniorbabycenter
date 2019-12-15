@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>Employees</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <style>
+        .div {
+    display:inline-block;
+    padding :2em;
+    width: 40%;
+    height: 50%;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 0em;
+
+    }
+
+    </style>
+
+
+    <!-- <script src="validate.js"></script> -->
+</head>
+
+<body>
+    <h1 style="text-align: center;">Employees's Details</h1>
+    <div class="div">
+    <form method="POST">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">UserName</label>
+            <input type="text" class="form-control" name="username" id="" placeholder="Enter your username...">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">PassWord</label>
+            <input type="password" class="form-control" name="password" id="" placeholder="Enter your password...">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">FirstName</label>
+            <input type="text" class="form-control" name="firstName" id=""
+                placeholder="Enter first name...">
+        </div>
+        <div class="form-group">
+            <label>LastName</label>
+            <input type="text" class="form-control" name="lastName" id="" placeholder="Enter last name...">
+        </div>
+        <div class="form-group">
+            <label>Sex</label><br />
+            <input type="radio" name="sex" id="" value="Male">Male
+            <input type="radio" name="sex" id="" value="Female">Female
+        </div>
+        <div class="form-group">
+            <label>DateOfBirth</label>
+            <input type="date" class="form-control" name="dateOfBirth" id="">
+        </div>
+        <div class="form-group">
+            <label>PlaceOfResidence</label>
+        </div>
+        <input type="text" class="form-control" name="residence" id="" placeholder="Place of Residence..."><br /><br />
+        <div class="form-group">
+            <label>PhoneNumber</label>
+            <input type="number" class="form-control" name="phoneNumber" id="">
+        </div>
+        <div class="form-group">
+            <label>NextOfkin</label>
+            <input type="text" class="form-control" name="nok" id="">
+        </div>
+        <div class="form-group">
+            <label>Clubs</label>
+            <select name="club" id="" class="form-control">
+                <option value="Select Club" disabled selected>Select Club</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+                <option value="Night">Night</option>
+            </select>
+        </div>
+        <br /><br />
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Register</button>
+    </form>
+</div>
+</body>
+
+</html>
